@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+
+  
+      <h1 class="govuk-heading-xl">
+        New Driver Theory Test 
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        The new service will replace the current driver theory test.
+      </p>
+
+      <p>
+        This page will link to the prototypes as we create them. 
+      </p>
+
+      <h2 class="govuk-heading-m">Sprint One</h2>
+            <ul>
+              <li><a href="prototypes/book-test/idams.html">Start</a> </li>
+            </ul>
+
+      <h2 class="govuk-heading-m">Other resources</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
+        <li>
+          <a href="https://design-system.service.gov.uk">
+            GOV.UK Design System
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+</div>
+  </div>
+</main>
+
+{% endblock %}
