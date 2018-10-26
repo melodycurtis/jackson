@@ -22,8 +22,8 @@
   <main class="govuk-main-wrapper">
 
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-third">
-        <h1 class="govuk-heading-xl">Sign in</h1>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Book a theory test</h1>
 
             </div>
         </div>
@@ -34,10 +34,10 @@
     
   
     <div class="govuk-form-group">
-        <label class="govuk-label" for="name">
-        User ID or email address
+        <label class="govuk-label" for="full-name">
+        Full name
         </label>
-        <input class="govuk-input" id="name" name="name" type="text">
+        <input class="govuk-input" id="full-name" name="name" type="text">
     </div>
     </div>
 </div>
@@ -46,22 +46,59 @@
   <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
     <div class="govuk-form-group">
-      <label class="govuk-label" for="name">Password
+      <label class="govuk-label" for="name">Provisional driving test number
       </label>
       <input class="govuk-input" id="name" name="name" type="text">
     </div>
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        What is your date of birth?
+      </h1>
+    </legend>
+    <span id="dob-hint" class="govuk-hint">
+      For example, 31 3 1980
+    </span>
+    <div class="govuk-date-input" id="dob">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dob-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dob-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dob-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<br>
 
     <button type="submit" class="govuk-button">
-      Sign in
+      Continue
     </button>
   </div>
 </div>
 
 
-<h3 class="govuk-heading-m">Problems signing in?</h3>
+<!--<h3 class="govuk-heading-m">Problems signing in?</h3>-->
 
-<p><a href="">I forgot my password</a></p>
-<p><a href="">I don't have an account</a></p>
     
 
     
