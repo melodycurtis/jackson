@@ -12,13 +12,5 @@ $govuk-global-styles: true;
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
-{{ govukPhaseBanner({
-  tag: {
-    text: "alpha"
-  },
-  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
-}) }}
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
