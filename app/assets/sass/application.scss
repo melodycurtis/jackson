@@ -14,3 +14,39 @@ $govuk-global-styles: true;
 
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+span {
+    font-size: 17px;
+    line-height: 25px;
+    font-family: "nta", Arial, sans-serif;
+}
+
+.submit {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 50000px;
+    background: url(../images/icon-search-2x.png) 60% 50%/24px no-repeat #0b0c0c;
+    float: left;
+    padding: 6px;
+    border: 0;
+    color: #fff;
+    z-index: 900;
+    position: relative;
+}
+
+
+.search-input-wrapper {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 40px;
+    margin-right: -40px;
+    float: left;
+    width: 100%;
+}
