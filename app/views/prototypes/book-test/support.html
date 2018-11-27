@@ -5,22 +5,23 @@
 {% endblock %}
 {% block beforeContent %}
   {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
 {{ govukPhaseBanner({
 tag: {
 text: "alpha"
 },
 html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
+<a href="#" class="govuk-back-link">Back</a>
+
 {% endblock %}
 
 {% block content %}
 
 
-<div class="govuk-width-container">
-  <a href="#" class="govuk-back-link">Back</a>
 
-  <main class="govuk-main-wrapper">
+  
+
+  
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -78,12 +79,12 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     
 
     
+
+
 </div>
 
-</div>
 
 
-
-    </main>
+ 
 
 {% endblock %}
