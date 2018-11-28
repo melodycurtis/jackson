@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "alpha"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        
+
+            </div>
+        </div>
+
+
+ 
+  
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Support is available for taking the test?
+      </h1>
+    </legend>
+    <span id="waste-hint" class="govuk-hint">
+       If English is your second language you may like the free service of ...
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+          I want to see the questions and answers in British Sign Language on the screen
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          I want to hear the questions read to me via headphones
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          I don't want any support
+        </label>
+      </div>
+      
+    </div>
+  </fieldset>
+</div>
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Available suppport 
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    We can support anyone who might find it difficult to ...
+  </div>
+</details>
+  
+<a href="find" class="govuk-button" type="submit">Continue</a>
+
+
+<!--<h3 class="govuk-heading-m">Problems signing in?</h3>-->
+
+    
+
+    
+
+
+</div>
+
+
+
+ 
+
+{% endblock %}

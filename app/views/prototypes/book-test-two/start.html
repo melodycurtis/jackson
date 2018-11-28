@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+tag: {
+text: "alpha"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+{% endblock %}
+
+{% block content %}
+
+
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Book a theory test</h1>
+
+        <p class="govuk-body">Use this service to:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Book a test</li>
+          <li>Find a test centre</li>
+          <li>Cancel a test</li>
+        </ul>
+
+        <p class="govuk-body">This will take around 5 minutes.</p>
+
+        <a href="details" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+        <p class="govuk-body">You can also register by post.</p>
+
+        <p class="govuk-body">The online service is available in
+          <a class="govuk-link" href="#">Welsh (Cymraeg)</a>.</p>
+
+        <p class="govuk-body">You can’t register for this service if you’re in the UK illegally.</p>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Subsection
+          </h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="#">
+                  Related link
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="#">
+                  Related link
+                </a>
+              </li>
+              <li>
+                <a href="#" class="govuk-link govuk-!-font-weight-bold">
+                  More
+                  <span class="govuk-visually-hidden">in Subsection</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div>
+  
+</div>
+
+</div>
+
+    </main>
+
+{% endblock %}
