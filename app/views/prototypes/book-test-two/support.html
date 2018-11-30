@@ -34,13 +34,18 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
   <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        Support is available for taking the test?
+        Select a tests to suit you
       </h1>
     </legend>
     <span id="waste-hint" class="govuk-hint">
-       If English is your second language you may like the free service of ...
-    </span>
+       All test adjustments are free.</span>
     <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+          I want to take the test in Welsh
+        </label>
+      </div>
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
         <label class="govuk-label govuk-checkboxes__label" for="waste-1">
@@ -53,10 +58,16 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
           I want to hear the questions read to me via headphones
         </label>
       </div>
+       <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          I would like extra time
+        </label>
+      </div>
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
         <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-          I don't want any support
+          I want to book a regular test 
         </label>
       </div>
       
@@ -66,11 +77,16 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
-      Available suppport 
+      What we can do to adjust the test for you 
     </span>
   </summary>
   <div class="govuk-details__text">
-    We can support anyone who might find it difficult to ...
+    We can support you in these ways:
+    <ul class="govuk-list govuk-list--bullet">
+  <li>a private test area</li>
+  <li>extra time</li>
+  <li>wheelchair access and a table with an adjustable height</li>
+</ul>
   </div>
 </details>
   
