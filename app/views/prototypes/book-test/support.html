@@ -19,62 +19,41 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 
-
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         
 
             </div>
         </div>
-
-
- 
-  
-    <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        Support is available for taking the test?
+        Do you want to take the test in Welsh?
       </h1>
     </legend>
-    <span id="waste-hint" class="govuk-hint">
-       If English is your second language you may like the free service of ...
+    <span id="changed-name-hint" class="govuk-hint">
+      ...
     </span>
-    <div class="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-          I want to see the questions and answers in British Sign Language on the screen
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          Yes
         </label>
       </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-          I want to hear the questions read to me via headphones
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          No
         </label>
       </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-          I don't want any support
-        </label>
-      </div>
-      
     </div>
   </fieldset>
 </div>
-<details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      Available suppport 
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    We can support anyone who might find it difficult to ...
-  </div>
-</details>
+
   
-<a href="find" class="govuk-button" type="submit">Continue</a>
+<a href="support" class="govuk-button" type="submit">Continue</a>
 
 
 <!--<h3 class="govuk-heading-m">Problems signing in?</h3>-->
@@ -82,12 +61,12 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     
 
     
-
+</div>
 
 </div>
 
 
 
- 
+    </main>
 
 {% endblock %}
