@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "alpha"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Find a theory test centre</h1>
+
+    
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Enter a postcode or city name
+      </h1>
+    </legend>
+    <span id="dob-hint" class="govuk-hint">
+      For example, NG1 9ZZ or Nottingham
+    </span>
+  </fieldset>
+    <div class="govuk-form-group">
+      <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+      
+      <input class="govuk-input" id="name" name="name" type="text">
+    </div>
+  </div>
+    <br>
+
+  <a href="centres" class="govuk-button" type="submit">Continue</a>
+ 
+  </fieldset>
+</div>
+</div>
+ 
+  
+    
+</div>
+
+</div>
+        </div>
+  </div>
+</div>
+
+    
+</div>
+
+
+
+    
+
+{% endblock %}
