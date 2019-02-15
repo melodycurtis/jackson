@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "alpha"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">DfE Sign-in</h1>
+        <p>DfE Sign-in is the new way to sign-in to access education and training services.</p>
+  
+
+            </div>
+        </div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="full-name">
+        Email address or Secure Access username
+        </label>
+        <input class="govuk-input" id="full-name" name="name" type="text">
+    </div>
+    </div>
+</div>
+
+ 
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="name">Password
+      </label>
+      <input class="govuk-input" id="name" name="name" type="text">
+    
+    
+<a href="#">I've forgotten my password</a><br>
+
+</div>
+  <a href="dash" class="govuk-button" type="submit">Sign in</a>
+  
+  </div>
+
+</div>
+     
+        
+      </p>
+      <div class="govuk-inset-text">
+  By continuing you accept the <a href="#">terms and conditions</a>.
+</div>
+
+    
+      
+      
+
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Having problems?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    If you are using DfE Sign-in for the first time you can use your Secure Access login details to create a DfE Sign-in account. Once you have created your account you will no longer use your Secure Access details to login. If you are still having problems, read our FAQs.
+  </div>
+</details>
+    </div>
+    </legend>
+  </fieldset>
+</div>
+
+    
+</div>
+
+
+
+{% endblock %}
