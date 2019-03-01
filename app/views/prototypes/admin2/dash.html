@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Search for a provider</h1>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    
+</div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top ">
+      <h2 class="govuk-heading-m"><a class="" href="add-new-provider">Add a new provider</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">2</span> -->
+      
+      <span class="govuk-body-s">Change a provider status</span><br>
+      <span class="govuk-body-s">Delete a provider record</span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m"><a class="" href="#">Create a report</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">344</span> -->
+      <span class="govuk-body-s">Choose a report</span><br>
+      <span class="govuk-body-s">Create a new report</span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m"><a class="" href="#">Create a report</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">4</span> -->
+      <span class="govuk-body-s">Print a report</span><br>
+      <span class="govuk-body-s">Save a report</span><br>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top ">
+      <h2 class="govuk-heading-m"><a class="" href="#">Do something else</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">18</span> -->
+      <span class="govuk-body-s">Again</span><br>
+      <span class="govuk-body-s">Again</span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+ </div>
+
+
+{% endblock %}
