@@ -7,13 +7,8 @@
 {% block content %}
 
 
-<div class="main-nav">
-  <a class="govuk-heading-s" href="dashboard">Activity</a>
-  <a class="govuk-heading-s" href="manage-collections">Collections</a>
-  <!-- <a class="govuk-heading-s" href="#">Provider(s)</a> -->
-</div>
-<br>
-<br>
+
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">Advanced search</h1>
@@ -22,34 +17,17 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
     <span class="govuk-heading-m">Search filter</span>
-    <a href="#" class="filter-box-button">
-      <span class="govuk-body"><strong>Date of submission</strong></span>
-    </a>
-    <div class="filter-box hidden">
-      <div class="govuk-radios govuk-radios--inline">
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-          <label class="govuk-label govuk-radios__label" for="changed-name-1">
-            Yesterday
-          </label>
-        </div>
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-          <label class="govuk-label govuk-radios__label" for="changed-name-2">
-            In the past
-          </label>
-        </div>
-      </div>
-    </div>
+    
+    
 
 <section class="filter-section">
     <a href="#" class="filter-box-button">
-      <span class="govuk-body"><strong>Collection type</strong></span>
+      <span class="govuk-body"><strong>Organisation type</strong></span>
     </a>
     <div class="filter-box hidden">
       <span class="govuk-body">checkboxes here</span>
     </div>
-</section>
+</section><br>
 <section>
     <a href="#" class="filter-box-button">
       <span class="govuk-body"><strong>Status</strong></span>
@@ -58,14 +36,7 @@
       <span class="govuk-body">checkboxes here</span>
     </div>
 </section>
-<section>
-    <a href="#" class="filter-box-button">
-      <span class="govuk-body"><strong>Processing log</strong></span>
-    </a>
-    <div class="filter-box hidden">
-      <span class="govuk-body">checkboxes here</span>
-    </div>
-</section>
+<br>
 </div>
   <div class="govuk-grid-column-two-thirds">
     <div>
@@ -76,26 +47,26 @@
               <!-- <p>3 results found.</p> -->
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="provider-record.html">Provider name 1</a></h3>
+              <h3 class="govuk-heading-m"><a href="provider-record">Leytonstone college</a></h3>
               <ul class="govuk-list">
                 <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
-                <li><span class="govuk-!-font-weight-bold">Last submission:</span> Monday 14 January by Bob Franks</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Active</li>
               </ul>
 
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="provider-record.html">Provider name 2</a></h3>
+              <h3 class="govuk-heading-m"><a href="#">Leamington college</a></h3>
               <ul class="govuk-list">
                 <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
-                <li><span class="govuk-!-font-weight-bold">Last submission:</span> Monday 7 January by Ann Franks</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Inactive</li>
               </ul>
 
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="provider-record.html">Provider name 3</a></h3>
+              <h3 class="govuk-heading-m"><a href="#">London college</a></h3>
               <ul class="govuk-list">
                 <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
-                <li><span class="govuk-!-font-weight-bold">Last submission:</span> Wednesday 9 January by Ian Franks</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Terminated </li>
               </ul>
 
 
