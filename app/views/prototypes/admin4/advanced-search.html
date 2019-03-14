@@ -1,35 +1,53 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-  GOV.UK prototype kit
-{% endblock %}
-{% block beforeContent %}
-  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-{{ govukPhaseBanner({
-tag: {
-text: "prototype"
-},
-html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
-}) }}
-<a href="#" class="govuk-back-link">Back</a>
-
+{% block pageTitle %}
+  GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
 
 
-
-
+{% include "./includes/nav.html" %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a id="backlink" href="#" class="govuk-back-link">Back</a>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <br>
+      {% include "./includes/search.html" %}
+      {% include "./includes/auto-js.html" %}
+  </div>
+</div>
+<br>
+<br>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">Advanced search</h1>
   </div>
+  
 </div>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
     <span class="govuk-heading-m">Search filter</span>
-    
-    
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Date</strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <div class="govuk-radios govuk-radios--inline">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="changed-name-1">
+            Yesterday
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+            In the past
+          </label>
+        </div>
+      </div>
+    </div>
 
 <section class="filter-section">
     <a href="#" class="filter-box-button">
@@ -38,7 +56,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     <div class="filter-box hidden">
       <span class="govuk-body">checkboxes here</span>
     </div>
-</section><br>
+</section>
 <section>
     <a href="#" class="filter-box-button">
       <span class="govuk-body"><strong>Status</strong></span>
@@ -47,7 +65,14 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
       <span class="govuk-body">checkboxes here</span>
     </div>
 </section>
-<br>
+<section>
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong></strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <span class="govuk-body">checkboxes here</span>
+    </div>
+</section>
 </div>
   <div class="govuk-grid-column-two-thirds">
     <div>
@@ -58,26 +83,26 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
               <!-- <p>3 results found.</p> -->
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="provider-record">Leytonstone college</a></h3>
+              <h3 class="govuk-heading-m"><a href="provider-record.html">Coventry college</a></h3>
               <ul class="govuk-list">
-                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 11122233</li>
                 <li><span class="govuk-!-font-weight-bold">Status:</span> Active</li>
               </ul>
 
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="#">Leamington college</a></h3>
+              <h3 class="govuk-heading-m"><a href="provider-record.html">Leamington college</a></h3>
               <ul class="govuk-list">
-                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 44455566</li>
                 <li><span class="govuk-!-font-weight-bold">Status:</span> Inactive</li>
               </ul>
 
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="#">London college</a></h3>
+              <h3 class="govuk-heading-m"><a href="provider-record.html">Birmingham university</a></h3>
               <ul class="govuk-list">
-                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
-                <li><span class="govuk-!-font-weight-bold">Status:</span> Terminated </li>
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 11233456</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Merged</li>
               </ul>
 
 
