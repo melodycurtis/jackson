@@ -20,8 +20,25 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l"><a class="" href="advanced-search">Search for a training provider</a></h1><br>
-    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <div class="app-masthead">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-heading-s govuk-!-font-size-27 white-text">Search for a provider</span>
+      <form class="govuk-form-group" action="provider-record">
+        <!-- <input class="govuk-input" id="name" name="name" type="text" placeholder="e.g. Manchester or 123456"> -->
+        <div id="tt-overlay" class="autocomplete-wrapper"></div>
+        <button id="searchProviders" type="search" class="govuk-button" ><img src="https://assets.publishing.service.gov.uk/frontend/govuk_publishing_components/search-button-ca89b2a79f944909ceb7370d3f0b78811d32b96e883348fcd8886f63dd619585.png"></img></button>
+      </form>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <a href="advanced-search">See all providers</a>
+        <a href="add-new-provider">Add a new provider</a>
+    </div>
+  </div>
+</div>
+
+    <!-- <h1 class="govuk-heading-l"><a class="" href="advanced-search">Search for a training provider</a></h1><br>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> -->
     
 </div>
 </div><br><br>
@@ -73,6 +90,8 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     </div>
   </div>
  </div>
+
+ {% include "./includes/auto-js.html" %}
 
 
 {% endblock %}
