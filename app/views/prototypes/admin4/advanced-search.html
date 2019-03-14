@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Advanced search</h1>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <span class="govuk-heading-m">Search filter</span>
+    
+    
+
+<section class="filter-section">
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Organisation type</strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <span class="govuk-body">checkboxes here</span>
+    </div>
+</section><br>
+<section>
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Status</strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <span class="govuk-body">checkboxes here</span>
+    </div>
+</section>
+<br>
+</div>
+  <div class="govuk-grid-column-two-thirds">
+    <div>
+              <!-- <input class="govuk-input govuk-!-width-two-thirds" id="provider-search" name="search-provider"
+              type="search" value="Manchester" aria-describedby="provider-search">
+              <a href="search-results.html" type="submit" class="govuk-button">Search</a> -->
+              <!-- <p>We found 3 results for "Manchester"</p> -->
+              <!-- <p>3 results found.</p> -->
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+              <h3 class="govuk-heading-m"><a href="provider-record">Leytonstone college</a></h3>
+              <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Active</li>
+              </ul>
+
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+              <h3 class="govuk-heading-m"><a href="#">Leamington college</a></h3>
+              <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Inactive</li>
+              </ul>
+
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+              <h3 class="govuk-heading-m"><a href="#">London college</a></h3>
+              <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 12345</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Terminated </li>
+              </ul>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

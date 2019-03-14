@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">DfE Sign-in</h1>
+        <p>DfE Sign-in is the new way to sign-in to education and training services.</p>
+  
+
+            </div>
+        </div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+       
+
+
+       <div class="govuk-form-group">
+         <label class="govuk-label" for="name">
+           Email address or Secure Access username
+         </label>
+         <input class="govuk-input govuk-input--width-20" id="name" name="name" type="text">
+       </div>
+
+       <div class="govuk-form-group">
+          <label class="govuk-label" for="name">
+          Password
+          </label>
+          <input class="govuk-input govuk-input--width-20" id="name" name="name" type="text">
+        </div>
+
+
+
+
+       
+  
+<a href="#">I've forgotten my password</a>
+
+ 
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-form-group">
+      
+    
+    
+
+
+</div>
+  <a href="dash" class="govuk-button" type="submit">Sign in</a>
+  
+  </div>
+
+</div>
+     
+        
+      </p>
+      <div class="govuk-inset-text">
+  By continuing you accept the <a href="https://interactions.signin.education.gov.uk/terms">terms and conditions</a>.
+</div>
+
+    
+      
+      
+
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Having problems?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    If you are having problems using the DfE Sign-in service, follow the link to read the <a href="https://help.signin.education.gov.uk/contact">frequently asked questions</a>. You will also be able to request further assistance if you need it.
+  </div>
+</details>
+    </div>
+    </legend>
+  </fieldset>
+
+  </div>
+</div>
+</div>
+
+    
+</div>
+
+
+
+{% endblock %}
