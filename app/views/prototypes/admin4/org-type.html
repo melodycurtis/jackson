@@ -34,48 +34,8 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
                 <h1 class="govuk-fieldset__heading">
                   Select the organisation type
                 </h1>
-              </legend><br>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="private-training-provider">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
-                    Private training provider
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="college">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                    Further education college
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="local-authority">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                    Local authority
-                  </label>
-                </div>
-                
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-5" name="where-do-you-live" type="radio" value="university">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-5">
-                  University
-                  </label>
-                </div>
-
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-5" name="where-do-you-live" type="radio" value="university">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-5">
-                 Charity
-                  </label>
-                </div>
-
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-5" name="where-do-you-live" type="radio" value="university">
-                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-5">
-                  Academy
-                  </label>
-                </div>
-              </div>
+              </legend>
+ 
             </fieldset>
           </div>
 
@@ -85,9 +45,22 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     </div>
   </main>
 </div>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Private training provider</option>
+    <option value="updated" selected>Further education</option>
+    <option value="views">Charity</option>
+    <option value="views">University</option>
+    <option value="views">Local authority</option>
+    <option value="comments">Academy</option>
+  </select>
+</div><br>
 
 
-       <a href="search-ukprn" class="govuk-button">Select and continue</a><br>
+       <a href="search-ukprn" class="govuk-button">Save and continue</a><br>
        <a href="dash" class="govuk-link">Cancel</a>
   </div>
 </div>
