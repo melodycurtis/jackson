@@ -24,33 +24,60 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 </div>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
-    <span class="govuk-heading-m">Search filter</span>
+    <span class="govuk-heading-m"></span>
     <a href="#" class="filter-box-button">
-      <span class="govuk-body"><strong>Status</strong></span>
+      <span class="govuk-body"><strong>Filter by status</strong></span>
     </a>
+    <section class="filter-section">
+    
     <div class="filter-box hidden">
-      <div class="govuk-radios govuk-radios--inline">
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-          <label class="govuk-label govuk-radios__label" for="changed-name-1">
-            Active
-          </label>
-        </div>
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-          <label class="govuk-label govuk-radios__label" for="changed-name-2">
-            Inactive
-          </label>
-        </div>
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+         Active
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Inactive
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Dissovved
+        </label>
       </div>
     </div>
-
+    </div>
+</section>
 <section class="filter-section">
     <a href="#" class="filter-box-button">
       <span class="govuk-body"><strong>Organisation type</strong></span>
     </a>
     <div class="filter-box hidden">
-      <span class="govuk-body">checkboxes here</span>
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+         Schools
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Academies
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Independant schools + colleges
+        </label>
+      </div>
+    </div>
     </div>
 </section>
 <section>
@@ -58,7 +85,26 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
       <span class="govuk-body"><strong>Status</strong></span>
     </a>
     <div class="filter-box hidden">
-      <span class="govuk-body">checkboxes here</span>
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+         Active
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Inactive
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Dissovved
+        </label>
+      </div>
+    </div>
     </div>
 </section>
 
