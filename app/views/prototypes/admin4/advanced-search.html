@@ -18,7 +18,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">Advanced search</h1>
+    <h1 class="govuk-heading-xl">Search results</h1>
   </div>
   
 </div>
@@ -26,7 +26,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
   <div class="govuk-grid-column-one-third">
     <span class="govuk-heading-m"></span>
     <a href="#" class="filter-box-button">
-      <span class="govuk-body"><strong>Filter by status</strong></span>
+      <span class="govuk-body"><strong>Filter by</strong></span>
     </a>
     <section>
     <a href="#" class="filter-box-button">
@@ -37,15 +37,26 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
         <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-         Active
+         All
         </label>
       </div>
+
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Active
+        </label>
+      </div>
+
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
         <label class="govuk-label govuk-checkboxes__label" for="waste-2">
           Inactive
         </label>
       </div>
+
+
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
         <label class="govuk-label govuk-checkboxes__label" for="waste-2">
@@ -61,7 +72,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
         <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Deleted
+          Proposed to open
         </label>
       </div>
     </div>
@@ -76,7 +87,14 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
         <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-         Academies
+         All
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Academies
         </label>
       </div>
 
@@ -214,24 +232,31 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
               <!-- <p>3 results found.</p> -->
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="provider-coventry.html">Coventry college</a></h3>
+              <h3 class="govuk-heading-m"><a href="provider-coventry.html">Coventry College</a></h3>
               <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">Address:</span> Henley Road, Bell Green, Coventry, West Midlands, CV2 1ED</li>
+                <li><span class="govuk-!-font-weight-bold">Organisation type:</span> Further education</li>
                 <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 11122233</li>
                 <li><span class="govuk-!-font-weight-bold">Status:</span> Active</li>
               </ul>
 
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="provider-record.html">Leamington college</a></h3>
+              <h3 class="govuk-heading-m"><a href="provider-record.html">Warwickshire College Group</a></h3>
               <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">Address:</span> Warwick New Road, Royal Leamington Spa, Warwickshire, CV32 5JE</li>
+                <li><span class="govuk-!-font-weight-bold">Organisation type:</span> Further education</li>
                 <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 44455566</li>
                 <li><span class="govuk-!-font-weight-bold">Status:</span> Inactive</li>
               </ul>
 
               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              <h3 class="govuk-heading-m"><a href="provider-record.html">Birmingham university</a></h3>
+              <h3 class="govuk-heading-m"><a href="provider-record.html">Birmingham University</a></h3>
               <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">Address:</span> Franchise Street, Perry Barr, Birmingham, West Midlands, B42 2SU</li>
+                <li><span class="govuk-!-font-weight-bold">Organisation type:</span> Higher education</li>
+                
                 <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 11233456</li>
                 <li><span class="govuk-!-font-weight-bold">Status:</span> Merged</li>
               </ul>
