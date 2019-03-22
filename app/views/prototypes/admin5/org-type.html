@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+       <div class="govuk-width-container">
+  
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                  Select the organisation type
+                </h1>
+              </legend>
+ 
+            </fieldset>
+          </div>
+
+          
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="comments"selected>Academy</option>
+    <option value="views">Charity</option>
+    <option value="views">Free school</option>
+    <option value="views">Government</option>
+    <option value="views">Further education college</option>
+    <option value="views">Local authority</option>
+    <option value="views">NHS</option>
+    <option value="views">Private training provider</option>
+    <option value="views">School</option>
+    <option value="views">University</option>
+    
+    
+  </select>
+</div><br>
+
+
+       <a href="academy-type" class="govuk-button">Save and continue</a><br>
+       <a href="dash" class="govuk-link">Cancel</a>
+  </div>
+</div>
+
+
+{% endblock %}
