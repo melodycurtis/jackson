@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a id="backlink" href="#" class="govuk-back-link">Back</a>
+  </div>
+  
+</div>
+<br>
+<br>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+       <h1 class="govuk-heading-xl">Select the organisation type</h1>
+       
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+
+
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+    <span id="citizenship-conditional-hint" class="govuk-hint">
+      Stuff
+    </span>
+    <div class="govuk-checkboxes" data-module="checkboxes">
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="citizenship-conditional-0" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-0">
+        <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-0">
+          Academy
+        </label>
+      </div>
+      <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-0">
+
+
+      <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input assignment" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="ILR Standard" data-aria-controls="conditional-how-contacted-conditional-1">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+          Converter
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+        
+      </div>
+
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input assignment2" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="ILR Periodic" data-aria-controls="conditional-how-contacted-conditional-2">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+          16 -19 
+        </label>
+      </div>
+
+       <div class="govuk-radios__item">
+        <input class="govuk-radios__input assignment2" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="ILR Periodic" data-aria-controls="conditional-how-contacted-conditional-3">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+        Sponsor-led
+        </label>
+      </div>
+      
+</div>
+</div>
+
+<div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input assignment5" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+          Charity
+        </label>
+      </div>
+
+
+
+
+     
+     
+      <div class="govuk-checkboxes" data-module="checkboxes">
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-1">
+        <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
+          FE
+        </label>
+      </div>
+      <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-1">
+
+
+      <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input assignment" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="ILR Standard" data-aria-controls="conditional-how-contacted-conditional-22">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-22">
+          College
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-22">
+        
+      </div>
+
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input assignment2" id="how-contacted-conditional-33" name="how-contacted" type="radio" value="ILR Periodic" data-aria-controls="conditional-how-contacted-conditional-33">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-33">
+          Independent Learning Provider
+        </label>
+      </div>
+
+       <div class="govuk-radios__item">
+        <input class="govuk-radios__input assignment2" id="how-contacted-conditional-44" name="how-contacted" type="radio" value="ILR Periodic" data-aria-controls="conditional-how-contacted-conditional-44">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-44">
+        Local authority
+        </label>
+      </div>
+      
+</div>
+</div>
+</div>
+      
+
+
+      
+      
+    </div>
+  </fieldset>
+
+
+</div>
+<a href="generate-upin" class="govuk-button">Save and continue</a><br>
+
+
+
+<p><a href="dash" class="govuk-link">Cancel</a></p>
+
+</div>
+
+ 
+
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "alpha"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+  
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-l">Test centres for:</h1>
+        <h1 class="govuk-heading-xl">CV5 6ED, Coventry, West Midlands, England</h1>
+      </div>
+    </div><hr>
+
+    <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h1 class="govuk-heading-m"><a href="">
+        Birmingham test centre</a>
+      </h1>
+
+      <p>Distance: 7.7 miles <br>New Road, Birmingham, West Midlands B2 6JE</p>
+      <hr><br>
+        <h1 class="govuk-heading-m"><a href="">
+        Leamington Spa test centre</a>
+      </h1>
+      
+                 
+      <p>Distance: 19.8 miles <br>
+        Warwick New Road, Leamington Spa, Warwickshire, CV32 5JE</p>
+      <hr><br>
+      <h1 class="govuk-heading-m"><a href="">
+        Coventry test centre</a>
+      </h1>
+      <p>Distance: 20.3 miles <br>
+        1st Floor, Warwick Gate, 21-22 Warwick Row, Coventry, CV1 1ET
+      </p>
+      
+  </div>
+
+    
+
+
+
+
+  <div class="govuk-grid-column-two-thirds">
+    <!--<h1 class="govuk-heading-m">
+        Leamington theory test centre
+      </h1>
+      <p>Distance:7.7 miles <br>Warwick New Road, Leamington Spa, Warwickshire, CV32 5JE</p>
+      
+  </div><hr>
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-m">
+      Birmingham theory test centre
+      </h1>
+      <p>Distance:7.7 miles <br>Warwick New Road, Leamington Spa, Warwickshire, CV32 5JE</p>-->
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QLbXUJd7o4TeSQfczApFj1Wi7PamV5Cs" width="640" height="480"></iframe>
+
+      <!--<img src="/public/images/map.png" alt="map of the uk">-->
+  </div>
+</div>
+
+  
+
+
+    
+
+{% endblock %}

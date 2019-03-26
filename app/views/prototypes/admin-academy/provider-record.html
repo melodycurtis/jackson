@@ -1,0 +1,188 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full"><br>
+     <br> <span class="govuk-caption-xl">UKPRN: 21345671</span>
+      
+       <h1 class="govuk-heading-xl">{{ data['input-autocomplete'] }}</h1>
+       
+      
+
+        
+  <dl class="govuk-summary-list">
+      
+
+      <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Status
+      </dt>
+    <dd class="govuk-summary-list__value">
+   Active
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Deactivate
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+ 
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      UPIN
+      </dt>
+    <dd class="govuk-summary-list__value">
+     No
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Generate
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Trading name
+      </dt>
+    <dd class="govuk-summary-list__value">
+      Leytonstone college east
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+   <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Organisation type
+      </dt>
+    <dd class="govuk-summary-list__value">
+      Further education 
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Address
+      </dt>
+    <dd class="govuk-summary-list__value">
+      72 Guild Street
+      <br>London SE23 6FH
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+  
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Head of Organisation
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Sarah Phillips
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> date of birth</span>
+      </a>
+    </dd>
+  </div>
+  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Contact details
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">07700 900457</p>
+      <p class="govuk-body">sarah.phillips@example.com</p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> contact details</span>
+      </a>
+    </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Funding formula
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">Adult Skills</p>
+      <p class="govuk-body">16-19 Learner Responsive Funding</p>
+      <p class="govuk-body">24+ Advanced Learning Loans Facility</p>
+      <p class="govuk-body">16-18 Apprenticeships</p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> contact details</span>
+      </a>
+    </dd>
+  </div>
+
+   <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Funding non-formula
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">Learner Support - hardship</p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> contact details</span>
+      </a>
+    </dd>
+  </div>
+
+
+
+
+</dl>
+
+
+       <a href="provider-record2" class="govuk-button">Add this provider</a><br>
+       <a href="dash" class="govuk-link">Back</a>
+  </div>
+</div>
+
+
+{% endblock %}

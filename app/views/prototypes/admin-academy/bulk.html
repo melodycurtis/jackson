@@ -17,33 +17,32 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 {% block content %}
 
+
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-
-       
-<h1 class="govuk-heading-xl">Organisation found</h1>
-
-<h2 class="govuk-heading-l">Leytonstone college</h2>
-<p class="govuk-body-l">UKPRN: 21345671</p>
-<div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-      
-    </dt>
-    <dd class="govuk-summary-list__value">
-      
-    </dd>
-    
-  </div>
-
-       
-  </div>
+    <h1 class="govuk-heading-xl">Upload a CSV file</h1>
+</div>
 </div>
 
 
 
-       <a href="check-result-no" class="govuk-button">Select</a><br>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
        
 
+
+      <div class="govuk-form-group">
+  <label class="govuk-label" for="file-upload-1">
+    <strong>Upload a file</strong>
+  </label>
+  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+</div>
+
+
+       <a href="providers-list-created" class="govuk-button">Upload file</a><br>
+       <a href="dash" class="govuk-link">Cancel</a>
   </div>
 </div>
 
