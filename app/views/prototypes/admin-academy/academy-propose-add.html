@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full"><br>
+     <br> <span class="govuk-caption-xl">UKPRN: 21345671</span>
+      
+       <h1 class="govuk-heading-xl">Links Academy</h1>
+       
+      
+
+        
+  <dl class="govuk-summary-list">
+      
+
+      <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Status
+      </dt>
+    <dd class="govuk-summary-list__value">
+   Propose to open
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Open
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+ 
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      UPIN
+      </dt>
+    <dd class="govuk-summary-list__value">
+     No
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="generate-upin-academy">
+        Generate
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  
+
+   <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Organisation type
+      </dt>
+    <dd class="govuk-summary-list__value">
+      Converter academy
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  
+
+
+</dl>
+
+
+       <a href="provider-record2" class="govuk-button">Add this provider</a><br>
+       <a href="dash" class="govuk-link">Back</a>
+  </div>
+</div>
+
+
+{% endblock %}
