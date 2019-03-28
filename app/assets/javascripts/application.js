@@ -7,4 +7,9 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
-})
+});
+
+$('#bulkOrSingle').click(function() {
+  if($('.add-one-org').is(':checked')) { location.href='academy-choices'; }
+     else if ($('.add-bulk').is(':checked')) { location.href='bulk'; }
+});
