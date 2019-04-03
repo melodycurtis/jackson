@@ -18,7 +18,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
 
        
 <h1 class="govuk-heading-xl">Search for a UKPRN</h1>
@@ -43,17 +43,38 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
        
 
 
-<h2 class="govuk-heading-l">Total People Limited</h2>
-<p class="govuk-body-l">UKPRN: 10021755</p>
-<div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-      
-    </dt>
-    <dd class="govuk-summary-list__value">
-      
-    </dd>
-    
-  </div>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption"></caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Name</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Postcode</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Verification type</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">UKPRN</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">St Christophers C of E Primary Multi Academy Trust</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">CV5 6DF</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">Companies House</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">10046984</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">St Francis of Assisi Academies Trust </th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">DY 9RZ</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">Companies House</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">100878787</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">St Johns Academy Trust</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">LE4 7AN</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">Government Statute</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">10058426</td>
+    </tr>
+  </tbody>
+</table>
 
        
   </div>
@@ -61,7 +82,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 
-       <a href="provider-total" class="govuk-button">Select and add</a><br>
+       <a href="provider-trust" class="govuk-button">Select and add</a><br>
        
 
   </div>
