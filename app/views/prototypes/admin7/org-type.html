@@ -26,13 +26,13 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
-        <form action="/form-handler" method="post" novalidate>
+        <form action="/form-handler" method="post" novalidate><br>
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                  Select the organisation type
+                  Select an organisation type
                 </h1>
               </legend>
  
@@ -40,35 +40,105 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
           </div>
 
           
-        </form>
+        
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+          Academy
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Charity
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Free school
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Government
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Further education college
+        </label>
+      </div>
+
+
+       <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Local authority
+        </label>
+      </div>
+
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          NHS
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Local authority
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Private training provider
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          School
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          University
+        </label>
+      </div>
+
+
+    </div>
+  </fieldset>
+</div>
+
+
+
+       <a href="changed-record" class="govuk-button">Save and continue</a><br>
+       <a href="dash" class="govuk-link">Cancel</a>
+  </div>
+</div>
+
+</form>
       </div>
     </div>
   </main>
-</div>
-<div class="govuk-form-group">
-  <label class="govuk-label" for="sort">
-    
-  </label>
-  <select class="govuk-select" id="sort" name="sort">
-    <option value="comments"selected>Academy</option>
-    <option value="views">Charity</option>
-    <option value="views">Free school</option>
-    <option value="views">Government</option>
-    <option value="views">Further education college</option>
-    <option value="views">Local authority</option>
-    <option value="views">NHS</option>
-    <option value="views">Private training provider</option>
-    <option value="views">School</option>
-    <option value="views">University</option>
-    
-    
-  </select>
-</div><br>
-
-
-       <a href="academy-type" class="govuk-button">Save and continue</a><br>
-       <a href="dash" class="govuk-link">Cancel</a>
-  </div>
 </div>
 
 
