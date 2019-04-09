@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+<a id="backlink" href="#" class="govuk-back-link">Back</a>
+<br>
+<br>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+       <h1 class="govuk-heading-xl">Add a single organisation or multiple organisations</h1>
+
+
+      <div class="govuk-form-group">
+      <label class="govuk-label" for="name">
+        
+      </label>
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input add-one-org" id="changed-name-1" name="changed-name" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="changed-name-1">
+            Add one organisation
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input add-bulk" id="changed-name-2" name="changed-name" type="radio" value="no">
+          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+            Add multiple organisations
+          </label>
+        </div>
+      </div>
+    </div>
+        <a href="#" id="bulkOrSingle" class="govuk-button">Continue</a><br>
+        <a href="dashboard" class="govuk-link">Cancel</a>
+  </div>
+
+</div>
+
+
+{% endblock %}
