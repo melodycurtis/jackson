@@ -1,0 +1,290 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">Search results</h1> 
+    <h3 class="download-link" align="right"><a href="#">Download these search results </a></h3> <p>Results matching <strong>'Coventry College'</strong></p>
+  
+</div>
+
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <span class="govuk-heading-m"></span>
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Filter by</strong></span>
+    </a>
+    <section>
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Status</strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+         All
+        </label>
+      </div>
+
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Active
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Inactive
+        </label>
+      </div>
+
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Merged
+        </label>
+      </div>
+
+      <!--<div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Dissolved
+        </label>
+      </div>-->
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Proposed to open
+        </label>
+      </div>
+    </div>
+    </div>
+</section>
+<section class="filter-section">
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Organisation type</strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+         All
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Academies
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Charities
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Colleges
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Free schools
+        </label>
+      </div>
+
+
+      
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Higher Education
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Independant schools + colleges
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Local authorities
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          NHS
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Private training providers
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Schools
+        </label>
+      </div>
+
+      
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Sixth forms
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Special post 16
+        </label>
+      </div>
+
+      
+    </div>
+    </div>
+</section>
+<section>
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Funding type</strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+         Adult skills
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          16-19 learner responsive funding
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          24+ advanced learner loans facility
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          16-18 apprenticeships
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Learner support - hardship
+        </label>
+      </div>
+    </div>
+    </div>
+</section>
+
+</div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <div>
+              <!-- <input class="govuk-input govuk-!-width-two-thirds" id="provider-search" name="search-provider"
+              type="search" value="Manchester" aria-describedby="provider-search">
+              <a href="search-results.html" type="submit" class="govuk-button">Search</a> 
+              <p>We found 3 results for "Coventry"</p>-->
+              <p>Showing 1-4 of <strong>4</strong> organisations</p>
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+              <h3 class="govuk-heading-m"><a href="provider-coventry.html">Coventry College</a></h3>
+              <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">Address:</span> Henley Road, Bell Green, Coventry, West Midlands, CV2 1ED</li>
+                <li><span class="govuk-!-font-weight-bold">Organisation type:</span> Further education</li>
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 10003010</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Active</li>
+              </ul>
+
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+              <h3 class="govuk-heading-m"><a href="provider-record.html">Warwickshire College Group</a></h3>
+              <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">Address:</span> Warwick New Road, Royal Leamington Spa, Warwickshire, CV32 5JE</li>
+                <li><span class="govuk-!-font-weight-bold">Organisation type:</span> Further education</li>
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 10005566</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Inactive</li>
+              </ul>
+
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+              <h3 class="govuk-heading-m"><a href="provider-record.html">Birmingham University</a></h3>
+              <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">Address:</span> Franchise Street, Perry Barr, Birmingham, West Midlands, B42 2SU</li>
+                <li><span class="govuk-!-font-weight-bold">Organisation type:</span> Higher education</li>
+                
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 10003456</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Merged</li>
+              </ul>
+
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+              <h3 class="govuk-heading-m"><a href="provider-record.html">Try Hard Training</a></h3>
+              <ul class="govuk-list">
+                <li><span class="govuk-!-font-weight-bold">Address:</span> Gordon Street, Hackney, London, S2 1SU</li>
+                <li><span class="govuk-!-font-weight-bold">Organisation type:</span> ILP</li>
+                
+                <li><span class="govuk-!-font-weight-bold">UKPRN:</span> 10003456</li>
+                <li><span class="govuk-!-font-weight-bold">Status:</span> Dissolved</li>
+              </ul>
+
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"><hr>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

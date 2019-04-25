@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full"><br>
+   <br> <span class="govuk-caption-xl">UKPRN: 10001030</span>
+      
+       <h1 class="govuk-heading-xl">Coventry College</h1>
+       
+      
+
+        
+  <dl class="govuk-summary-list">
+      
+
+      <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Status
+      </dt>
+    <dd class="govuk-summary-list__value">
+   Active
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      UKPRN
+      </dt>
+    <dd class="govuk-summary-list__value">
+      10001030
+     
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="add-ukprn">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      UPIN
+      </dt>
+    <dd class="govuk-summary-list__value">
+     234555
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="academy-propose">
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+ 
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      URN
+      </dt>
+    <dd class="govuk-summary-list__value">
+     130356
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="academy-propose">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      DfE number
+      </dt>
+    <dd class="govuk-summary-list__value">
+     919/1106
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="academy-propose">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  
+
+  
+
+   <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Organisation type
+      </dt>
+    <dd class="govuk-summary-list__value">
+      Further education
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Funding type
+      </dt>
+    <dd class="govuk-summary-list__value">
+      Direct funding
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  
+
+
+</dl>
+
+
+       <a href="advanced-search" class="govuk-button">Back to search results</a><br>
+       <a href="dash" class="govuk-link">Cancel</a>
+  </div>
+</div>
+
+
+{% endblock %}

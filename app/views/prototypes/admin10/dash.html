@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-masthead">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-heading-s govuk-!-font-size-27 white-text">Search for an organisation on PIMS</span>
+      <form class="govuk-form-group" action="advanced-search">
+        <!-- <input class="govuk-input" id="name" name="name" type="text" placeholder="e.g. Manchester or 123456"> -->
+        <div id="tt-overlay" class="autocomplete-wrapper"></div>
+        <button id="searchProviders" type="search" class="govuk-button" ><img src="https://assets.publishing.service.gov.uk/frontend/govuk_publishing_components/search-button-ca89b2a79f944909ceb7370d3f0b78811d32b96e883348fcd8886f63dd619585.png"></img></button>
+      </form>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <a href="advanced-search">Create a report</a>
+        <a href="check-an-org">Search on UKRLP</a>
+    </div>
+  </div>
+</div>
+
+    <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-xl">12</h2>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-xl" align="centre">4</h2>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-xl" align="centre">32</h2>
+  </div>
+</div>
+
+
+    
+</div>
+</div><br><br>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top ">
+      <h2 class="govuk-heading-m"><a class="" href="add-new-provider">Add a new organisation</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">2</span> -->
+      
+      <span class="govuk-body-s"><a class="" href="find">Edit a provider record</a></span><br>
+      <span class="govuk-body-s"><a class="" href="#">Edit an organisation record</a></span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m"><a class="" href="#">Terminate a contract</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">344</span> -->
+      <span class="govuk-body-s"><a class="" href="#">Change a contract status</a></span><br>
+      <span class="govuk-body-s"><a class="" href="#">Mark an organisation as closed</a></span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m"><a class="" href="#">Add a funding flag</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">4</span> -->
+      <span class="govuk-body-s"><a class="" href="bulk">Bulk upload funding</a></span><br>
+      <span class="govuk-body-s"><a class="" href="#">Change a funding flag status</a></span><br>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top ">
+      <h2 class="govuk-heading-m"><a class="" href="#">Change an academy status</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">18</span> -->
+      <span class="govuk-body-s"><a class="" href="#">Mark an academy as open</a></span><br>
+      <span class="govuk-body-s"><a class="" href="#">Change an academy status</a></span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+ </div>
+
+ {% include "./includes/auto-js.html" %}
+
+
+{% endblock %}
