@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+       
+<h1 class="govuk-heading-xl">No organisation found</h1>
+
+<div class="govuk-form-group">
+          <label class="govuk-label" for="name">
+          Add the new organisation name
+          </label>
+          <input class="govuk-input govuk-input--width-20" id="name" name="name" type="text">
+        </div>
+
+
+        <a href="dash" class="govuk-button">Save and add</a>
+        <p><a href="dash" class="govuk-link">Cancel</a></p>
+    
+  </div>
+
+      
+
+       
+       
+
+  </div>
+</div>
+</div>
+
+
+{% endblock %}

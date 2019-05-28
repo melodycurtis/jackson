@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+{% include "./includes/nav.html" %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a id="backlink" href="#" class="govuk-back-link">Back</a>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <br>
+      {% include "./includes/search.html" %}
+      {% include "./includes/auto-js.html" %}
+  </div>
+</div>
+<br>
+<br>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl">Search results</h1>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__value">
+              <strong>Provider name</strong>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <strong>UKPRN</strong>
+            </dd>
+            <dd class="govuk-summary-list__value">
+              <strong>Postcode</strong>
+            </dd>
+            <dd class="govuk-summary-list__value">
+              <strong>System</strong>
+            </dd>
+            <dd class="govuk-summary-list__value">
+              <strong>Error</strong>
+            </dd>
+            <dd class="govuk-summary-list__value">
+              <strong>Modified on</strong>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__value">
+              Manchester College
+            </dt>
+            <dd class="govuk-summary-list__value">
+              100223344
+            </dd>
+            <dd class="govuk-summary-list__value">
+              W1 4AA
+            </dd>
+            <dd class="govuk-summary-list__value">
+              UKRLP
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Record did not match
+            </dd>
+            <dd class="govuk-summary-list__value">
+              24/04/19
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__value">
+              Coventry Council
+            </dt>
+            <dd class="govuk-summary-list__value">
+              100556677
+            </dd>
+            <dd class="govuk-summary-list__value">
+              BL4 4LL
+            </dd>
+            <dd class="govuk-summary-list__value">
+              UKRLP
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Record did not match
+            </dd>
+            <dd class="govuk-summary-list__value">
+              24/04/19
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__value">
+              St John's Academy
+            </dt>
+            <dd class="govuk-summary-list__value">
+              100998877
+            </dd>
+            <dd class="govuk-summary-list__value">
+              CV5 7ED
+            </dd>
+            <dd class="govuk-summary-list__value">
+              GIAS
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Record did not match
+            </dd>
+            <dd class="govuk-summary-list__value">
+              24/04/19
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__value">
+              Warwickshire College
+            </dt>
+            <dd class="govuk-summary-list__value">
+              100998855
+            </dd>
+            <dd class="govuk-summary-list__value">
+              CV5 6ED
+            </dd>
+            <dd class="govuk-summary-list__value">
+              GIAS
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Record did not match
+            </dd>
+            <dd class="govuk-summary-list__value">
+              24/04/19
+            </dd>
+          </div>
+
+
+
+        </dl>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+Collapse
+
+
+
