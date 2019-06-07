@@ -1,0 +1,159 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full"><br>
+   <br> <span class="govuk-caption-xl govuk-red">Deactivated UKPRN: 10003010</span>
+      
+       <h1 class="govuk-heading-xl">Coventry College</h1>
+       
+      
+
+        
+  
+
+<br>
+
+ <h1 class="govuk-heading-m">Expired funding</h1>
+
+
+
+<dl class="govuk-summary-list">
+      
+<div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      16-18 Apprenticeships
+      </dt>
+    <dd class="govuk-summary-list__value">
+      1 August 2014
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link">14 May 2015
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      16-19 Learner responsive
+      </dt>
+    <dd class="govuk-summary-list__value">
+      1 August 2012
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link">14 May 2015
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      24+ Advanced learner loans facility
+      </dt>
+    <dd class="govuk-summary-list__value">
+      1 August 2014
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link">30 August 2015
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      24+ Advanced learner loans bursary - college
+    </dd>
+      </dt>
+    <dd class="govuk-summary-list__value">
+      1 August 2014
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link">11 August 2015
+      
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+   <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Adult skills - college
+      </dt>
+    <dd class="govuk-summary-list__value">
+      1 August 2014
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link">30 February 2014
+      
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Apprenticeship levy
+      </dt>
+    <dd class="govuk-summary-list__value">
+      1 March 2011
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link">7 June 2014
+      
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Apprenticeship non levy procured
+      </dt>
+    <dd class="govuk-summary-list__value">
+      1 March 2012
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link">13 May 2014
+      
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+</dl>
+
+  
+
+
+
+
+
+       <a href="advanced-search2" class="govuk-button">Back</a><br>
+       <!--<a href="dash" class="govuk-link">Cancel</a>-->
+  </div>
+</div>
+
+
+{% endblock %}
