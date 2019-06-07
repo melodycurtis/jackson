@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-masthead">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-heading-s govuk-!-font-size-27 white-text">Search for an organisation on PIMS</span>
+      <form class="govuk-form-group" action="advanced-search">
+        
+        <div id="tt-overlay" class="autocomplete-wrapper"></div>
+        <button id="searchProviders" type="search" class="govuk-button" ><img src="https://assets.publishing.service.gov.uk/frontend/govuk_publishing_components/search-button-ca89b2a79f944909ceb7370d3f0b78811d32b96e883348fcd8886f63dd619585.png"></img></button>
+      </form>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <a href="advanced-search2">Advanced search</a>
+        <a href="saved-search">Saved searches</a>
+        <a href="#"></a>
+    </div>
+  </div>
+</div>
+
+<h1 class="govuk-heading-xl">
+      <!--<span class="govuk-caption-m">May 2019</span>-->
+      Latest activity
+    </h1>
+
+    <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m  govuk-teal  centre-text">Added records</h2>
+    <h2 class="govuk-heading-xl centre-text">22</h2>
+    <p class="govuk-body-s centre-text"> <a href="list" class="govuk-back-link">2 errors</a></p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m govuk-teal centre-text">Amended records</h2>
+    <h2 class="govuk-heading-xl centre-text" align="centre">40</h2>
+    <p class="govuk-body-s centre-text"><a href="list" class="govuk-back-link">1 error</a></p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m govuk-red centre-text">Health check</h2>
+    <h2 class="govuk-heading-xl centre-text" align="centre">0</h2>
+    <p class="govuk-body-s centre-text"><a href="list" class="govuk-back-link">All fine</a></p>
+  </div>
+</div>
+
+
+    
+</div>
+</div><br>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top ">
+      <h2 class="govuk-heading-m"><a class="" href="#">Close an organisation</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">2</span> -->
+      
+      <span class="govuk-body-s"><a class="" href="#">Close a contract</a></span><br>
+      <span class="govuk-body-s"><a class="" href="#"></a></span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m"><a class="" href="#">Add funding</a></h2>
+      <!-- <span class="govuk-heading-xl no-margin-bottom">344</span> -->
+      <span class="govuk-body-s"><a class="" href="#">End date a contract</a></span><br>
+      <span class="govuk-body-s"><a class="" href="#"></a></span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+
+   <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m"><a class="" href="#">Manual changes</a></h2>
+        
+      <span class="govuk-body-s"><a class="" href="#"></a></span><br>
+      <span class="govuk-body-s"><a class="" href="#"></a></span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
+
+<!--<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m"><a class="" href="#">Create a campus group</a></h2>
+      
+      <span class="govuk-body-s"><a class="" href="bulk">?</a></span><br>
+      <span class="govuk-body-s"><a class="" href="#">?</a></span><br>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top ">
+      <h2 class="govuk-heading-m"><a class="" href="#">Create an academy group</a></h2>
+      
+      <span class="govuk-body-s"><a class="" href="#">Mark an academy as open</a></span><br>
+      <span class="govuk-body-s"><a class="" href="#">Move an academy to another trust</a></span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>-->
+ </div>
+
+ {% include "./includes/auto-js.html" %}
+
+
+{% endblock %}
