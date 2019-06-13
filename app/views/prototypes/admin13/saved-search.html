@@ -10,68 +10,100 @@
   <div class="govuk-grid-column-two-thirds">
     <a id="backlink" href="#" class="govuk-back-link">Back</a>
   </div>
-  <div class="govuk-grid-column-one-third">
-    <br>
-      {% include "./includes/search.html" %}
-      {% include "./includes/auto-js.html" %}
-  </div>
+ 
 </div>
 <br>
-<br>
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">Saved searches</h1>
-  </div>
-  
-  <div class="govuk-grid-column-one-third"><p><a class="grey-button govuk-button--secondary" href="advanced-search-v2">New advanced search</a></p></div>
-</div>
 
-<br>
+
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-m flex space-between">Saved search - Active by postcode <span class="govuk-body govuk-!-font-weight-bold"><a class="margin-left" href="advanced-search-v2-edit"></a></span></h2>
-      <p>Created by: Lynn Burdon</p>
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-          <ul class="govuk-list govuk-list--bullet">
-            <li>Provider</li>
-            <li>Active</li>
-            <li>Postcode</li>
-          </ul>
-        </div>
-        <div class="govuk-grid-column-one-third">
-          <ul class="govuk-list govuk-list--bullet">
-            <li>Created by</li>
-            <li>Created on</li>
-            <li>Name</li>
-          </ul>
-        </div>
-      </div>
-      <a href="query-results" class="govuk-button ">Search</a>
+
+
+    
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Service now report
+      </h1>
+    </legend>
+    <span id="waste-hint" class="govuk-hint">
+      Created for Ruth Brown
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+          UPIN
+        </label> </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          UKPRN
+        </label> </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Legal name
+        </label> </div>
+
+        <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Trading name
+        </label> </div>
+        <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Status
+        </label> </div>
+    </div>
+  </fieldset>
+</div>
+      <a href="service-now" class="govuk-button ">Search</a>
       <hr>
   </div>
-</div>
+</div><br>
+
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-m flex space-between">Saved search - dissolved academies 
-      <span class="govuk-body govuk-!-font-weight-bold"><a class="margin-left" href="advanced-search-v2-edit"></a></span></h2>
-      <p>Created by: Kam Thandi</p>
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-          <ul class="govuk-list govuk-list--bullet">
-            <li>Provider</li>
-            <li>Dissolved</li>
-            <li>Academy</li>
-          </ul>
-        </div>
-        <div class="govuk-grid-column-one-third">
-          <ul class="govuk-list govuk-list--bullet">
-            <li>Created by</li>
-            <li>Created on</li>
-            <li>Name</li>
-          </ul>
-        </div>
-      </div>
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Popular report
+      </h1>
+    </legend>
+    <span id="waste-hint" class="govuk-hint">
+      Created for Lynne Burdon
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+          UPIN
+        </label> </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          UKPRN
+        </label> </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Legal name
+        </label> </div>
+
+        <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Status
+        </label> </div>
+    </div>
+  </fieldset>
+</div>
 
       <a href="query-results" class="govuk-button ">Search</a>
       <hr>
