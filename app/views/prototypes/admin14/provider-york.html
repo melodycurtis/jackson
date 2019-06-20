@@ -1,0 +1,374 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full"><br>
+   <br> <span class="govuk-caption-xl">UKPRN: 10003010</span>
+      
+       <h1 class="govuk-heading-xl">York College</h1>
+       
+      
+
+        
+  <dl class="govuk-summary-list">
+      
+<div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Status
+      </dt>
+    <dd class="govuk-summary-list__value">
+   Active
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="status-change">
+        Change
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+
+ 
+
+ 
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      UPIN
+      </dt>
+    <dd class="govuk-summary-list__value">
+     106441
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="academy-propose">
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+ 
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      URN
+      </dt>
+    <dd class="govuk-summary-list__value">
+     147111
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="academy-propose">
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      DfE number
+      </dt>
+    <dd class="govuk-summary-list__value">
+     330/2204
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="academy-propose">
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  
+
+  
+
+   <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Organisation type
+      </dt>
+    <dd class="govuk-summary-list__value">
+        Academy sponsor led
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Verification
+      </dt>
+    <dd class="govuk-summary-list__value">
+        Companies House 1123344
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+
+
+  
+<div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Trading name
+      </dt>
+    <dd class="govuk-summary-list__value">
+      York College 
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+   
+
+   <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+      Address
+      </dt>
+    <dd class="govuk-summary-list__value">
+      Long Road, Bell Green
+      <br>York, YK2 1ED
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+       
+        <span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+  
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Phone number
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body  govuk-red">023 126 222932</p>
+      <p class="govuk-body"></p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        
+        <span class="govuk-visually-hidden"> contact details</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Head of Organisation
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Mr Peter Brammall
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        
+        <span class="govuk-visually-hidden"> date of birth</span>
+      </a>
+    </dd>
+  </div>
+  
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Contact details
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">0789 006 7755</p>
+      <p class="govuk-body">pbrammall@example.com</p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        
+        <span class="govuk-visually-hidden"> contact details</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Academy Trust
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">Academies Enterprise Trust</p>
+      <p class="govuk-body"></p>
+      
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        
+        <span class="govuk-visually-hidden"></span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Funding type
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">Direct</p>
+      <p class="govuk-body"></p>
+      
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        
+        <span class="govuk-visually-hidden"></span>
+      </a>
+    </dd>
+  </div>
+
+</dl><br><br>
+
+<h1 class="govuk-heading-l">Funding</h1>
+ <dl class="govuk-summary-list">
+    <div class="govuk-summary-list__row" id="no-border-bottom">
+    
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="expired-funding">Show funding history</a>
+    </dd>
+  </div>
+</dl>
+
+ <h1 class="govuk-heading-m">Formula funded</h1>
+
+ <table class="govuk-table">
+         
+         <thead class="govuk-table__head">
+           <tr class="govuk-table__row">
+             <th class="govuk-table__header" scope="col">Name</th>
+             <th class="govuk-table__header " scope="col">Start date</th>
+             <th class="govuk-table__header " scope="col"></th>
+           </tr>
+         </thead>
+         <tbody class="govuk-table__body">
+
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">24+ Advanced learner loans facility</th>
+             <td class="govuk-table__cell ">12 August 2017</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric">
+      <a class="govuk-link" href="close-funding">End</a></td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">24+ Advanced learner bursary - college</th>
+             <td class="govuk-table__cell ">12 August 2015</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric">
+      <a class="govuk-link" href="close-funding">End</a></td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">Adult skills - college</th>
+             <td class="govuk-table__cell ">12 August 2015</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric">
+      <a class="govuk-link" href="close-funding">End</a></td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">Apprenticeship levy</th>
+             <td class="govuk-table__cell ">1 March 2019</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric">
+      <a class="govuk-link" href="close-funding">End</a></td>
+      <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">16-18 Apprenticeships</th>
+             <td class="govuk-table__cell ">12 August 2014</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric">
+              
+      <a class="govuk-link" href="close-funding">End</a></td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">16-19 Learner responsive</th>
+             <td class="govuk-table__cell ">12 August 2016</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric">
+      
+      <a class="govuk-link" href="close-funding">End</a></td>
+      </td>
+           </tr>
+           </tr>
+         </tbody>
+       </table><dl class="govuk-summary-list">
+    <div class="govuk-summary-list__row" id="no-border-bottom">
+      
+    
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="funding-factors">Show factors</a>
+    </dd>
+  </div>
+</dl>
+
+
+
+
+
+       <br><br>
+
+       <h1 class="govuk-heading-m">Non formula funded</h1>
+
+       <table class="govuk-table">
+         
+         <thead class="govuk-table__head">
+           <tr class="govuk-table__row">
+             <th class="govuk-table__header" scope="col">Name</th>
+             <th class="govuk-table__header " scope="col">Start date</th>
+             <th class="govuk-table__header " scope="col"></th>
+           </tr>
+         </thead>
+         <tbody class="govuk-table__body">
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">Learner support</th>
+             <td class="govuk-table__cell ">12 August 2014</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric">
+      <a class="govuk-link" href="close-funding">End</a></td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">Non mainstrean funding EFA</th>
+             <td class="govuk-table__cell ">12 August 2016</td>
+             <td class="govuk-table__cell govuk-table__cell--numeric">
+      <a class="govuk-link" href="close-funding">End</a></td>
+           </tr>
+           
+         </tbody>
+       </table>
+
+<dl class="govuk-summary-list">
+    <div class="govuk-summary-list__row" id="no-border-bottom">
+      
+    
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="close-funding-all">End all funding</a>
+    </dd>
+  </div>
+</dl>
+
+       <a href="advanced-search2" class="govuk-button">Back</a><br>
+       <a href="expired-funding" class="govuk-link">Cancel</a>
+       
+  </div>
+</div>
+
+
+{% endblock %}

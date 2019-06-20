@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    
+
+<br><h1 class="govuk-heading-xl">
+      
+      Systems check
+    </h1><br><br>
+
+    <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m centre-text">GIAS</h2>
+    <h2 class="govuk-heading-m govuk-teal centre-text">Good</h2>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m govuk-green centre-text">UKRLP</h2>
+    <h2 class="govuk-heading-m govuk-teal centre-text" align="centre">Good</h2>
+    
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m centre-text">Companies House</h2>
+    <h2 class="govuk-heading-m govuk-red centre-text" align="centre">Not responding</h2>
+  </div>
+</div>
+
+
+    
+</div>
+</div><br><br><br>
+
+
+
+
+
+
+ {% include "./includes/auto-js.html" %}
+
+
+{% endblock %}
