@@ -1,0 +1,527 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">Search results</h1> 
+    <h3 class="download-link" align="right"><a href="/public/images/report2.csv" target="_blank">Download these results as a CSV </a></h3> <p>Results matching <strong>'House'</strong></p>
+
+  
+</div>
+
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <span class="govuk-heading-m"></span>
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Filter by</strong></span>
+    </a>
+    
+
+ <section>
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Status</strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+         All
+        </label>
+      </div>
+
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Active
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Inactive
+        </label>
+      </div>
+
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Dissolved
+        </label>
+      </div>
+
+      
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Proposed to open
+        </label>
+      </div>
+    </div>
+    </div>
+</section>
+
+
+<section class="filter-section">
+    <a href="#" class="filter-box-button">
+      <span class="govuk-body"><strong>Organisation type</strong></span>
+    </a>
+    <div class="filter-box hidden">
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+         All
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Academies
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Charities
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Colleges
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Free schools
+        </label>
+      </div>
+
+
+      
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Higher Education
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Independant schools + colleges
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Local authorities
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          NHS
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Private training providers
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Schools
+        </label>
+      </div>
+
+      
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Sixth forms
+        </label>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          Special post 16
+        </label>
+      </div>
+
+      
+    </div>
+    </div>
+</section>
+
+
+</div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <div>   
+
+        <dl class="govuk-summary-list">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__value">
+              <strong>UKPRN</strong>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              <strong>Name</strong>
+            </dd>
+            <dd class="govuk-summary-list__value">
+              <strong>Type</strong>
+            </dd>
+            <dd class="govuk-summary-list__value">
+              <strong>Status</strong>
+            </dd>
+          </div>
+
+          
+
+          
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10005426
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="house-of-clive" class="govuk-link">House of Clive (Hair and Beauty) Limited</a>
+            </dt>
+            
+            
+            
+            <dd class="govuk-summary-list__value">
+              Private Limited Company
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10003010
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="provider-coventry2" class="govuk-link">Coventry College</a>
+            </dt>
+            
+            
+            
+            <dd class="govuk-summary-list__value">
+              General FE college + third-level
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+
+            <dd class="govuk-summary-list__value">
+              10005512
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Rock House Training Limited</a>
+            </dt>
+            
+            
+            
+            <dd class="govuk-summary-list__value">
+              Private Limited Company
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value govuk-red">
+              10007609
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Woodhouse College</a>
+            </dt>
+            
+            
+            
+            <dd class="govuk-summary-list__value">
+              Sixth form college
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10003918
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Light House Media Centre</a>
+            </dt>
+            
+            
+            
+            <dd class="govuk-summary-list__value">
+              PRI/LBG/NSC (use of Limited exemption)
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10004938
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">The Oxford House in Bethnal Green</a>
+            </dt>
+            
+            
+            
+            <dd class="govuk-summary-list__value">
+              PRI/LTD by GUAR/NSC
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10006813
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">The Brooke House Sixth Form College</a>
+            </dt>
+            
+            
+            
+            <dd class="govuk-summary-list__value">
+              Sixth Form College
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10025914
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Glasshouse College</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              PRI/LTD by GUAR/NSC
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+
+<div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10009995
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Breedon House Nurseries Limited</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+               Private Limited Company
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              1002900
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Liverpool Lighthouse Limited</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              PRI/LTD by GUAR/NSC
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10010064
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Old Warren House School</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              Pupil Referral Unit
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10003590
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Key House Project</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              PRI/LTD by GUAR/NSC
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10029371
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Red House Academy</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              Academy-Sponsor Led
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Propose to open
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10016839
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Moat House</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              Pupil Referral Unit
+            </dd>
+            <dd class="govuk-summary-list__value">
+             Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10033231
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Brighthouse High School</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              Academy Converter
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10033592
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Park House School</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              Academy Converter
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              10033592
+            </dd>
+            <dt class="govuk-summary-list__value">
+              <a href="#" class="govuk-link">Bladon House School</a>
+            </dt>
+            
+            
+            <dd class="govuk-summary-list__value">
+              School Other Independant Special
+            </dd>
+            <dd class="govuk-summary-list__value">
+              Active
+            </dd>
+          </div>
+          
+
+        </dl>
+
+
+
+  </div>
+</div>
+
+
+{% endblock %}
