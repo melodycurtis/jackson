@@ -1,29 +1,29 @@
 {% extends "layout.html" %}
 
-{% block pageTitle %}
-  GOV.UK Prototype Kit
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
 {% endblock %}
 
 {% block content %}
-
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <a id="backlink" href="#" class="govuk-back-link">Back</a>
-  </div>
- 
-</div>
-<br>
-
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">Prepared reports</h1> 
     
-      <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+    <div>   
+
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
         Service now report
       </h1>
@@ -60,16 +60,15 @@
         </label> </div>
     </div>
   </fieldset>
-</div>
-      <a href="service-now" class="govuk-button ">Create</a>
-      <hr>
-  </div>
-</div><br>
+</div><br><br>
 
 
+      <a href="service-now" class="govuk-button ">Download</a>
 
 
-<div class="govuk-grid-row">
+      <hr><br>
+
+      <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
@@ -107,12 +106,11 @@
   </fieldset>
 </div>
 
-      <a href="query-results" class="govuk-button ">Create</a>
-      <hr>
-  </div>
-</div><br>
+      <a href="query-results" class="govuk-button ">Download</a>
+      <hr><br><br>
 
-<div class="govuk-grid-row">
+
+      <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
@@ -168,18 +166,20 @@
   </fieldset>
 </div>
 
-      <a href="status-check" class="govuk-button ">Create</a>
+      <a href="status-check" class="govuk-button ">Download</a>
       <hr>
   </div>
 </div>
+  </div>
+</div><br>
+  
 
+</div>
 
+</div>
 
-
-
-
-
-
+  </div>
+</div>
 
 
 {% endblock %}
