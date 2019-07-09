@@ -523,6 +523,8 @@ html {
   display: none;
 }
 
+
+
 //-------------other pages--------------//
 
 .see-all-providers {
@@ -532,53 +534,30 @@ html {
   font-weight: 700;
 }
 
-.grey-button {
-  background-color: govuk-colour("grey-4");
-  padding: 15px 15px 10px 15px;
-  display: block;
-
-  h3 {
-    margin-bottom: 0;
-
-    a {
-      text-decoration: none;
-    }
-  }
-}
-
-.govuk-grid-column-one-third.sticky {
-  position: sticky;
-  top: 20px;
-
-}
-
-#no-border-bottom {
-
-  dd, dt {
-    border-bottom: 0;
-  }
-}
+//-------------grey button--------------//
 
 .govuk-button--secondary {
- background-color: govuk-colour("grey-3");
- box-shadow: 0 2px 0 govuk-colour("grey-1");
+ background-color: govuk-colour("grey-3");
+ box-shadow: 0 2px 0 govuk-colour("grey-1");
 
 }
 
 .margin-left {
- margin-left: 20px;
+ margin-left: 20px;
 }
 
 .govuk-button--secondary, .govuk-button--secondary:link, .govuk-button--secondary:visited, .govuk-button--secondary:active, .govuk-button--secondary:hover {
-   color: #0b0c0c;
+   color: #0b0c0c;
 }
 
 .govuk-button--secondary:hover {
- background-color: govuk-colour("grey-2");
+ background-color: govuk-colour("grey-2");
 
 }
 
 .govuk-button--secondary:focus {
- background-color: govuk-colour("grey-2");
+ background-color: govuk-colour("grey-2");
 
 }
+
+
