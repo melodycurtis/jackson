@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">Prepared reports</h1> 
+    
+    <div>   
+
+        
+    
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Status check report
+      </h1>
+    </legend>
+    
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+          UKPRN
+        </label> </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+          UPIN
+        </label> </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          URN
+        </label> </div>
+
+        <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Legal name
+        </label> </div>
+
+        <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Status
+        </label> </div>
+
+        <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          In administration
+        </label> </div>
+
+        <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="#" checked="1">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          In liquidation
+        </label> </div>
+    </div>
+  </fieldset>
+</div><br><br>
+
+      <a href="status-check" class="govuk-button ">Create report</a>
+
+      
+      <hr>
+    
+
+
+      
+
+      
+
+
+      <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+  
+  </div>
+</div>
+  </div>
+</div><br>
+  
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+
+{% endblock %}
