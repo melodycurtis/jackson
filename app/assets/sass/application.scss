@@ -564,4 +564,25 @@ html {
   background-color: green;
 }
 
+.pagination {
+ text-decoration: none;
+ display: block;
+ margin: 0 -20px 0 -20px;
+ padding: 20px;
+ .next-link {
+   font-weight: 700;
+   margin-left: 10px;
+ }
+ .whats-next-link {
+   margin-left: 30px;
+   text-decoration: underline;
+ }
+}
+.pagination:hover {
+ color: $govuk-link-colour;
+ background-color: govuk-colour("grey-4");
+}
+.pagination:visited {
+ color: $govuk-link-colour;
+}
 
