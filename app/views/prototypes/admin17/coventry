@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a><br>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full"><br>
+   <br> <span class="govuk-caption-xl">UKPRN: 10003010</span>
+      
+       <h1 class="govuk-heading-xl">Coventry College</h1> 
+
+<br>
+
+ <h1 class="govuk-heading-m">Funding history</h1>
+
+
+
+
+
+<table class="govuk-table">
+         <!-- <caption class="govuk-table__caption">Here are the providers to add:</caption> -->
+         <thead class="govuk-table__head">
+           <tr class="govuk-table__row">
+             <th class="govuk-table__header" scope="col">Name</th>
+             <th class="govuk-table__header " scope="col">Start date</th>
+             <th class="govuk-table__header " scope="col">End date</th>
+           </tr>
+         </thead>
+         <tbody class="govuk-table__body">
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">16-18 Apprenticeships</th>
+             <td class="govuk-table__cell ">12 August 2014</td>
+             <td class="govuk-table__cell govuk-summary-list__actions">1 September 2015</td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">16-19 Learner responsive</th>
+             <td class="govuk-table__cell ">12 August 2016</td>
+             <td class="govuk-table__cell govuk-summary-list__actions">1 September 2015</td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">24+ Advanced learner loans facility</th>
+             <td class="govuk-table__cell ">12 August 2017</td>
+             <td class="govuk-table__cell govuk-summary-list__actions">1 September 2015</td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">24+ Advanced learner bursary - college</th>
+             <td class="govuk-table__cell ">12 August 2015</td>
+             <td class="govuk-table__cell govuk-summary-list__actions">1 September 2015</td>
+           </tr>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">Adult skills - college</th>
+             <td class="govuk-table__cell ">12 August 2015</td>
+             <td class="govuk-table__cell govuk-summary-list__actions">1 September 2015</td>
+           <tr class="govuk-table__row">
+             <th class="govuk-table__cell" scope="row">Apprenticeship levy</th>
+             <td class="govuk-table__cell ">1 March 2017</td>
+             <td class="govuk-table__cell govuk-summary-list__actions">12 August 2019</td>
+           </tr>
+         </tbody>
+       </table><br><br>
+
+  
+
+
+
+
+
+       <a href="provider-coventry2" class="govuk-button">Back</a><br>
+       <!--<a href="dash" class="govuk-link">Cancel</a>-->
+  </div>
+</div>
+
+
+{% endblock %}

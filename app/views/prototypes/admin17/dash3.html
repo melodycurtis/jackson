@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "prototype"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+<a href="#" class="govuk-back-link">Back</a>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="app-masthead">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-heading-s govuk-!-font-size-27 white-text">Search provider information</span>
+      <form class="govuk-form-group" action="provider-coventry2">
+        
+        <div id="tt-overlay" class="autocomplete-wrapper"></div>
+        <button id="searchProviders" type="search" class="govuk-button" ><img src="https://assets.publishing.service.gov.uk/frontend/govuk_publishing_components/search-button-ca89b2a79f944909ceb7370d3f0b78811d32b96e883348fcd8886f63dd619585.png"></img></button>
+      </form>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <a href="advanced-search-ilp">Advanced search</a>
+        <a href="saved-reports">Prepared reports</a>
+        <a href="#"></a>
+    </div>
+  </div>
+</div>
+
+<h1 class="govuk-heading-l">
+      <span class="govuk-caption-m">May 2019</span>
+      Provider information activity
+    </h1>
+
+    <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m govuk-teal centre-text"><a href="list-added-academy">Records added</a></h2>
+    <h2 class="govuk-heading-xl centre-text">200</h2>
+    <h2 class="govuk-body-s centre-text"> 2 errors</h2>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m govuk-teal centre-text"><a href="list-change-new">Records amended</a></h2>
+    <h2 class="govuk-heading-xl centre-text" align="centre">14</h2>
+    <p class="govuk-body-s centre-text">2 errors</p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m govuk-teal centre-text"><a href="bulk">Upload funding factors</a></h2></h2>
+    <h2 class="govuk-heading-xl centre-text">20</h2>
+    <p class="govuk-body-s centre-text">no errors</p>
+  </div>
+</div>
+
+
+    
+</div>
+</div><br>
+
+
+<!--<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m centre-text">Funding factors</h2>
+      <span class="govuk-body-s centre-text"><a class="" href="bulk">Upload 16-19 funding</a></span><br>
+      <span class="govuk-body-s centre-text"><a class="" href="#"></a></span><br>
+      <span class="govuk-body-s centre-text"></span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m centre-text">Funding factors</h2>
+      
+      <span class="govuk-body-s centre-text"><a class="" href="bulk">Upload 16-19 funding</a></span><br>
+      <span class="govuk-body-s centre-text"><a class="" href="#"></a></span><br>
+      <span class="govuk-body-s centre-text"></span>
+    </div>
+  </div>
+
+   <div class="govuk-grid-column-one-third">
+    <div class="border-top">
+      <h2 class="govuk-heading-m"></h2>
+      <span class="govuk-body-s"><a class="" href="#"></a></span><br>
+      <span class="govuk-body-s"><a class="" href="#"></a></span><br>
+      <span class="govuk-body-s"></span>
+    </div>
+  </div>
+
+</div>-->
+
+
+
+ </div>
+
+ {% include "./includes/auto-js.html" %}
+
+
+{% endblock %}
